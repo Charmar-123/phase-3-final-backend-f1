@@ -3,6 +3,9 @@ class CreateConstructors < ActiveRecord::Migration[6.1]
     create_table :constructors do |t|
       t.string :name
       t.string :nationality
+      t.integer :position
+      t.integer :points
+      t.integer :wins
     end
   end
 end
