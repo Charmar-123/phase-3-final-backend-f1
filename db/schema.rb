@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_15_022529) do
+ActiveRecord::Schema.define(version: 2023_04_15_023046) do
 
   create_table "constructor_standings", force: :cascade do |t|
     t.string "name"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2023_04_15_022529) do
     t.string "nationality"
     t.integer "number"
     t.integer "constructor_id"
+    t.integer "points"
   end
 
 end
