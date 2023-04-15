@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2023_04_15_055651) do
     t.integer "position"
     t.integer "wins"
     t.integer "constructor_id"
-    t.integer "image_url"
+    t.string "image_url"
   end
 
   create_table "team_principles", force: :cascade do |t|
