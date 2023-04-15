@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_15_022321) do
+ActiveRecord::Schema.define(version: 2023_04_15_022529) do
+
+  create_table "constructor_standings", force: :cascade do |t|
+    t.string "name"
+    t.string "position"
+    t.string "points"
+    t.string "wins"
+    t.integer "constructor_id"
+  end
 
   create_table "constructors", force: :cascade do |t|
     t.string "name"
