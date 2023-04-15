@@ -28,16 +28,16 @@ Driver.create(name:"Zhou Guanyu" , dob:"1999-05-30" ,nationality:"Chinese" ,numb
 
 # create constructors
 
-Constructor.create(name:"Alfa Romeo" , nationality:"Swiss" , position: "8",points: "6",wins: "0")
-Constructor.create(name:"AlphaTauri" , nationality:"Italian" , position: "9",points: "1",wins: "0")
-Constructor.create(name:"Alpine F1 Team" , nationality:"French" , position: "6",points: "8",wins: "0")
-Constructor.create(name:"Aston Martin" , nationality:"British" , position: "2",points: "65",wins: "0")
-Constructor.create(name:"Ferrari" , nationality:"Italian" , position: "4",points: "26",wins: "0")
-Constructor.create(name:"Haas F1 Team" , nationality:"American" , position: "7",points: "7",wins: "0")
-Constructor.create(name:"McLaren" , nationality:"British" , position: "5",points: "12",wins: "0")
-Constructor.create(name:"Mercedes" , nationality:"German" , position: "3",points: "56",wins: "0")
-Constructor.create(name:"Red Bull" , nationality:"Austrian" , position: "1",points: "123",wins: "3")
-Constructor.create(name:"Williams" , nationality:"British", position: "10",points: "1",wins: "0" )
+Constructor.create(name:"Alfa Romeo" , nationality:"Swiss" , position: "8",points: "6",wins: "0", image_url: "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/alfa%20romeo.jpg")
+Constructor.create(name:"AlphaTauri" , nationality:"Italian" , position: "9",points: "1",wins: "0", image_url: "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/alphatauri.jpg")
+Constructor.create(name:"Alpine F1 Team" , nationality:"French" , position: "6",points: "8",wins: "0", image_url: "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/alpine.jpg")
+Constructor.create(name:"Aston Martin" , nationality:"British" , position: "2",points: "65",wins: "0", image_url: "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/aston%20martin.jpg")
+Constructor.create(name:"Ferrari" , nationality:"Italian" , position: "4",points: "26",wins: "0", image_url: "https://media.formula1.com/content/dam/fom-website/teams/Ferrari/logo-ferrari-18%20.jpg")
+Constructor.create(name:"Haas F1 Team" , nationality:"American" , position: "7",points: "7",wins: "0", image_url: "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/haas.jpg")
+Constructor.create(name:"McLaren" , nationality:"British" , position: "5",points: "12",wins: "0", image_url: "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/mclaren.jpg")
+Constructor.create(name:"Mercedes" , nationality:"German" , position: "3",points: "56",wins: "0", image_url: "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/mercedes.jpg")
+Constructor.create(name:"Red Bull" , nationality:"Austrian" , position: "1",points: "123",wins: "3", image_url: "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/red%20bull.jpg")
+Constructor.create(name:"Williams" , nationality:"British", position: "10",points: "1",wins: "0", image_url:  "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/williams.jpg")
 
 # create owners
 
