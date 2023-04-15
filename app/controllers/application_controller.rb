@@ -12,5 +12,15 @@ class ApplicationController < Sinatra::Base
     driver_standings.to_json
   end
 
+  get "/team_principles" do
+    team_principles = TeamPrinciple.all
+    team_principles.to_json(include: {constructor: {include: :drivers}})
+  end
+
+  get "/constructors" do
+    constructors = Constructor.all
+    constructors.to_json
+  end
+
 
 end
