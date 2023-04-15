@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_15_022529) do
+ActiveRecord::Schema.define(version: 2023_04_15_042152) do
 
   create_table "constructor_standings", force: :cascade do |t|
     t.string "name"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2023_04_15_022529) do
     t.integer "number"
     t.integer "points"
     t.integer "constructor_id"
+    t.string "image_url"
   end
 
 end
