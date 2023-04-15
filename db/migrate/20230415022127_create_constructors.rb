@@ -6,6 +6,7 @@ class CreateConstructors < ActiveRecord::Migration[6.1]
       t.integer :position
       t.integer :points
       t.integer :wins
+      t.string :image_url
     end
   end
 end

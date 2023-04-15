@@ -24,6 +24,52 @@ Driver.create(name:"Yuki Tsunoda" , dob:"2000-05-11" ,nationality:"Japanese" ,nu
 Driver.create(name:"Max Verstappen" , dob:"1997-09-30	" ,nationality:"Dutch" ,number:"33" ,constructor_id: 9, points: "69", image_url: "https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/verstappen.jpg.img.1024.medium.jpg/1677069646195.jpg", position: "1" ,wins: "2")
 Driver.create(name:"Zhou Guanyu" , dob:"1999-05-30" ,nationality:"Chinese" ,number:"24" ,constructor_id: 1, points: "2", image_url: "https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/zhou.jpg.img.1024.medium.jpg/1677069909295.jpg", position: "15" ,wins: "0")
 
+
+
+# create constructors
+
+Constructor.create(name:"Alfa Romeo" , nationality:"Swiss" , position: "8",points: "6",wins: "0")
+Constructor.create(name:"AlphaTauri" , nationality:"Italian" , position: "9",points: "1",wins: "0")
+Constructor.create(name:"Alpine F1 Team" , nationality:"French" , position: "6",points: "8",wins: "0")
+Constructor.create(name:"Aston Martin" , nationality:"British" , position: "2",points: "65",wins: "0")
+Constructor.create(name:"Ferrari" , nationality:"Italian" , position: "4",points: "26",wins: "0")
+Constructor.create(name:"Haas F1 Team" , nationality:"American" , position: "7",points: "7",wins: "0")
+Constructor.create(name:"McLaren" , nationality:"British" , position: "5",points: "12",wins: "0")
+Constructor.create(name:"Mercedes" , nationality:"German" , position: "3",points: "56",wins: "0")
+Constructor.create(name:"Red Bull" , nationality:"Austrian" , position: "1",points: "123",wins: "3")
+Constructor.create(name:"Williams" , nationality:"British", position: "10",points: "1",wins: "0" )
+
+# create owners
+
+TeamPrinciple.create(name: "Toto Wolff", nationality: "Austrian", constructor_id: "8", image_url: "https://cdn-5.motorsport.com/images/mgl/2d1PmqDY/s8/toto-wolff-team-principal-and--1.jpg")
+TeamPrinciple.create(name: "Christian Horner", nationality: "British", constructor_id: "9", image_url: "https://cdn-8.motorsport.com/images/mgl/68y7bAD0/s8/max-verstappen-red-bull-racing-1.jpg")
+TeamPrinciple.create(name: "Fred Vasseur", nationality: "French", constructor_id: "5", image_url: "https://sportsbase.io/images/gpfans/copy_620x348/991fe6f67c7d356fddab270b1e74a2606580d80c.jpg")
+TeamPrinciple.create(name: "Otmar Szafnauer", nationality: "Romanian-American", constructor_id: "3", image_url: "https://sportsbase.io/images/gpfans/copy_620x348/547f7792c224a9eded5396d8cd457ca0998249cc.jpg")
+TeamPrinciple.create(name: "Andrea Stella", nationality: "Italian", constructor_id: "7", image_url: "https://sportsbase.io/images/gpfans/copy_620x348/1bfb2b6af70c6bca2456de50f4f160079cbf886a.png")
+TeamPrinciple.create(name: "Alessandro Alunni Bravi", nationality: "Italian", constructor_id: "1", image_url: "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQpbgjZE1PCMUJ6fcFkM6jjNAW5ht8Ubc2n6YAyo2cxd0GEbRZC_lH3fPP4MBVZ5Sm2096v8vCMCeF2G1U")
+TeamPrinciple.create(name: "Mike Krack", nationality: "Luxembourgish", constructor_id: "4", image_url: "https://sportsbase.io/images/gpfans/copy_620x348/1f86222478676f8da21b95befb91ab6fee6fecd4.jpg")
+TeamPrinciple.create(name: "Guenther Steiner", nationality: "Italian", constructor_id: "6", image_url: "https://sportsbase.io/images/gpfans/copy_620x348/02c93e6f86c67eaec21f41da850d7adbc172b7ce.jpg")
+TeamPrinciple.create(name: "Franz Tost", nationality: "Austrian", constructor_id: "2", image_url: "https://sportsbase.io/images/gpfans/copy_620x348/a3bc5479f96fb883c294eccc225e268c69a525a5.jpg")
+TeamPrinciple.create(name: "James Vowles", nationality: "British", constructor_id: "10", image_url: "https://sportsbase.io/images/gpfans/copy_620x348/4fd75c293274a0f7e4c6926a0a47910cec723cc3.jpg")
+
+
+
+
+
+
+# create constructor standings
+
+# ConstructorStanding.create(name:"Red Bull", position: "1",points: "123",wins: "3", constructor_id: 9)
+# ConstructorStanding.create(name:"Aston Martin", position: "2",points: "65",wins: "0", constructor_id: 4)
+# ConstructorStanding.create(name:"Mercedes", position: "3",points: "56",wins: "0", constructor_id: 8)
+# ConstructorStanding.create(name:"Ferrari", position: "4",points: "26",wins: "0", constructor_id: 5)
+# ConstructorStanding.create(name:"McLaren", position: "5",points: "12",wins: "0", constructor_id: 7)
+# ConstructorStanding.create(name:"Alpine F1 Team", position: "6",points: "8",wins: "0", constructor_id: 3)
+# ConstructorStanding.create(name:"Haas F1 Team", position: "7",points: "7",wins: "0", constructor_id: 6)
+# ConstructorStanding.create(name:"Alfa Romeo", position: "8",points: "6",wins: "0", constructor_id: 1)
+# ConstructorStanding.create(name:"AlphaTauri", position: "9",points: "1",wins: "0", constructor_id: 2)
+# ConstructorStanding.create(name:"Williams", position: "10",points: "1",wins: "0", constructor_id: 10)
+
 # create driver standing
 # DriverStanding.create(name:"Alexander Albon", position: "18" ,wins: "0", points: "0", driver_id:1 )
 # DriverStanding.create(name:"Fernando Alonso", position: "3" ,wins: "0", points: "45", driver_id:2 )
@@ -45,34 +91,6 @@ Driver.create(name:"Zhou Guanyu" , dob:"1999-05-30" ,nationality:"Chinese" ,numb
 # DriverStanding.create(name:"Yuki Tsunoda" , position: "16" ,wins: "0", points: "1", driver_id:18)
 # DriverStanding.create(name:"Max Verstappen" , position: "1" ,wins: "2", points: "69", driver_id:19 )
 # DriverStanding.create(name:"Zhou Guanyu" , position: "15" ,wins: "0", points: "2", driver_id:20 )
-
-
-# create constructors
-
-Constructor.create(name:"Alfa Romeo" , nationality:"Swiss" , position: "8",points: "6",wins: "0")
-Constructor.create(name:"AlphaTauri" , nationality:"Italian" , position: "9",points: "1",wins: "0")
-Constructor.create(name:"Alpine F1 Team" , nationality:"French" , position: "6",points: "8",wins: "0")
-Constructor.create(name:"Aston Martin" , nationality:"British" , position: "2",points: "65",wins: "0")
-Constructor.create(name:"Ferrari" , nationality:"Italian" , position: "4",points: "26",wins: "0")
-Constructor.create(name:"Haas F1 Team" , nationality:"American" , position: "7",points: "7",wins: "0")
-Constructor.create(name:"McLaren" , nationality:"British" , position: "5",points: "12",wins: "0")
-Constructor.create(name:"Mercedes" , nationality:"German" , position: "3",points: "56",wins: "0")
-Constructor.create(name:"Red Bull" , nationality:"Austrian" , position: "1",points: "123",wins: "3")
-Constructor.create(name:"Williams" , nationality:"British", position: "10",points: "1",wins: "0" )
-
-# create constructor standings
-
-# ConstructorStanding.create(name:"Red Bull", position: "1",points: "123",wins: "3", constructor_id: 9)
-# ConstructorStanding.create(name:"Aston Martin", position: "2",points: "65",wins: "0", constructor_id: 4)
-# ConstructorStanding.create(name:"Mercedes", position: "3",points: "56",wins: "0", constructor_id: 8)
-# ConstructorStanding.create(name:"Ferrari", position: "4",points: "26",wins: "0", constructor_id: 5)
-# ConstructorStanding.create(name:"McLaren", position: "5",points: "12",wins: "0", constructor_id: 7)
-# ConstructorStanding.create(name:"Alpine F1 Team", position: "6",points: "8",wins: "0", constructor_id: 3)
-# ConstructorStanding.create(name:"Haas F1 Team", position: "7",points: "7",wins: "0", constructor_id: 6)
-# ConstructorStanding.create(name:"Alfa Romeo", position: "8",points: "6",wins: "0", constructor_id: 1)
-# ConstructorStanding.create(name:"AlphaTauri", position: "9",points: "1",wins: "0", constructor_id: 2)
-# ConstructorStanding.create(name:"Williams", position: "10",points: "1",wins: "0", constructor_id: 10)
-
 
 
 
