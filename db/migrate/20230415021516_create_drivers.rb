@@ -9,7 +9,7 @@ class CreateDrivers < ActiveRecord::Migration[6.1]
       t.integer :position
       t.integer :wins
       t.integer :constructor_id
-      t.integer :image_url
+      t.string :image_url
     end
   end
 end

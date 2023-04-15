@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/driverstandings" do
-    driver_standings = DriverStanding.all.order(:position)
+    driver_standings = Driver.all.order(:position)
     driver_standings.to_json
   end
 
