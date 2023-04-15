@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_15_023046) do
+ActiveRecord::Schema.define(version: 2023_04_15_022529) do
 
   create_table "constructor_standings", force: :cascade do |t|
     t.string "name"
-    t.string "position"
-    t.string "points"
-    t.string "wins"
+    t.integer "position"
+    t.integer "points"
+    t.integer "wins"
     t.integer "constructor_id"
   end
 
@@ -27,9 +27,9 @@ ActiveRecord::Schema.define(version: 2023_04_15_023046) do
 
   create_table "driver_standings", force: :cascade do |t|
     t.string "name"
-    t.string "position"
-    t.string "wins"
-    t.string "points"
+    t.integer "position"
+    t.integer "wins"
+    t.integer "points"
     t.integer "driver_id"
   end
 
@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 2023_04_15_023046) do
     t.string "dob"
     t.string "nationality"
     t.integer "number"
-    t.integer "constructor_id"
     t.integer "points"
+    t.integer "constructor_id"
   end
 
 end
