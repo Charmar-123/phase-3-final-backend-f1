@@ -10,11 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_15_022127) do
+ActiveRecord::Schema.define(version: 2023_04_15_022321) do
 
   create_table "constructors", force: :cascade do |t|
     t.string "name"
     t.string "nationality"
+  end
+
+  create_table "driver_standings", force: :cascade do |t|
+    t.string "name"
+    t.string "position"
+    t.string "wins"
+    t.string "points"
+    t.integer "driver_id"
   end
 
   create_table "drivers", force: :cascade do |t|
