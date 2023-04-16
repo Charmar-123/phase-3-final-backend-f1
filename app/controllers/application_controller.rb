@@ -18,8 +18,13 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/constructors" do
-    constructors = Constructor.all
+    constructors = Constructor.all.order(:position)
     constructors.to_json
+  end
+
+  post "/fantasy_league" do
+    message = FantasyLeague.create(formData)
+    message.to_json
   end
 
 
