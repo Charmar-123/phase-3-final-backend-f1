@@ -22,10 +22,16 @@ class ApplicationController < Sinatra::Base
     constructors.to_json
   end
 
+  get "/fantasy_league" do 
+    fantasy_league = FantasyLeague.all
+    fantasy_league.to_json
+  end
   post "/fantasy_league" do
     message = FantasyLeague.create(formData)
     message.to_json
   end
+
+
 
 
 end
