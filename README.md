@@ -1,1 +1,1 @@
-# Back for f1Wiki app https://github.com/Charmar-123/phase-3-final-frontend-f1
+# Back-end for f1Wiki app https://github.com/Charmar-123/phase-3-final-frontend-f1
