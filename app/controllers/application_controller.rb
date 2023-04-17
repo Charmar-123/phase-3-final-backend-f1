@@ -38,6 +38,13 @@ class ApplicationController < Sinatra::Base
     fantasy_league.to_json
   end
 
+  patch "/fantasy_league/:id" do
+    fantasy_league = FantasyLeague.find(params[:id])
+    fantasy_league.update(team_principle_id: params[:team_principle_id],
+    constructor_id: params[:constructor_id], first_driver_id: params[:first_driver_id], second_driver_id: params[:second_driver_id])
+    fantasy_league.to_json
+  end
+
 
 
 
